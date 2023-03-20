@@ -1,0 +1,36 @@
+1.employees table
+a. SELECT *
+FROM [emoloyees][emoloyees];
+/// it selects all table and rows of a table. The purpose of this command to see or make change in entire table
+b.SELECT name, salary
+FROM employees 
+WHERE salary>50000;
+//purpose og thie query to get idea about salary
+c. SELECT AVG(salary) AS averageSalary
+FROM emoployees;
+/// purpose:get idea of average salary
+d. SELECT COUNT(department_id)
+FROM employees;
+where department_id='marketing';
+//purpose: Searching under particular crieteria
+e.UPDATE emoloyees
+SET salary=100000;
+WHERE id > 1001 and id<60000;
+//update
+f.DELETE from employee
+where salary < 300000;
+//delete query
+
+2.department TABLE
+a. SELECT *
+FROM [department][department];//selecting all columns and rows
+b.SELECT name, manager
+FROM department
+WHERE name='finance';
+//finance dept's info 
+c.SELECT COUNT(DISTINCT name)
+FROM department;
+//counting total
+d.INSERT INTO department(name, manager)
+VAlUES('Research', 'John Doe');
+// inserting
